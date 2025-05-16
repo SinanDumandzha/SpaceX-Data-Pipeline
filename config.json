@@ -1,8 +1,8 @@
 {
-  "account": "",
-  "user": "",
-  "password": "",
-  "database": "",
-  "warehouse": "",
-  "schema": "public"
+  "account": "QLXFBCZ-KJ23005",
+  "user": "SINAND",
+  "password": "*******************",
+  "database": "SNOWFLAKE",
+  "warehouse": "COMPUTE_WH",
+  "schema": "PUBLIC"
 }
