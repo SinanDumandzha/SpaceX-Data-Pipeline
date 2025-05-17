@@ -2,7 +2,7 @@
   "account": "QLXFBCZ-KJ23005",
   "user": "SINAND",
   "password": "*******************",
-  "database": "SNOWFLAKE",
-  "warehouse": "COMPUTE_WH",
+  "database": "DE_DB",
+  "warehouse": "DE_WH",
   "schema": "PUBLIC"
 }
