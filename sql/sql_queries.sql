@@ -14,3 +14,19 @@ select
     count(*) as launch_count
 from dbt_spacex.launches
 group by rocket;
+
+select
+    rocket,
+    avg(
+        case when success = true then 1
+            else 0
+        end
+    ) as success_rate
+from dbt_spacex.launches
+group by rocket;
+
+select
+    year(launch_date) as launch_year,
+    count(*) as launch_number
+from dbt_spacex.launches
+group by launch_year;
