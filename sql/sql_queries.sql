@@ -30,3 +30,26 @@ select
     count(*) as launch_number
 from dbt_spacex.launches
 group by launch_year;
+
+select
+    l.id,
+    l.launch_date,
+    r.name as rocket_name,
+    r.active
+from dbt_spacex.launches l
+join dbt_spacex.rockets r
+on l.rocket = r.id;
+
+select *
+from dbt_spacex.launches
+where launch_date = (
+    select max(launch_date) from dbt_spacex.launches
+);
+
+with recent_launches as (
+    select *
+    from dbt_spacex.launches
+    where launch_date > '2020-01-01'
+)
+
+select * from recent_launches;
