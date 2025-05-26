@@ -53,3 +53,10 @@ with recent_launches as (
 )
 
 select * from recent_launches;
+
+create or replace view dbt_spacex.successful_launches as
+    select *
+    from dbt_spacex.successful_launches
+    where success = true;
+
+select * from dbt_spacex.success;
