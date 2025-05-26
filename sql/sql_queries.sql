@@ -56,7 +56,7 @@ select * from recent_launches;
 
 create or replace view dbt_spacex.successful_launches as
     select *
-    from dbt_spacex.successful_launches
+    from dbt_spacex.launches
     where success = true;
 
-select * from dbt_spacex.success;
+select * from dbt_spacex.successful_launches;
