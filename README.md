@@ -63,7 +63,7 @@ dbt test
 3. Transform and model the data using dbt.
 4. Run analytics on clean, well-structured datasets.
 
-📷 Screenshots
+## 📷 Screenshots
 
 - **10 launches:**
 
